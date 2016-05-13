@@ -8,62 +8,61 @@
 			margin: 15px auto 0 auto;
 			max-width: 90%;
             color: #135991;
-			}
+		}
 		form {
-				margin: 0 auto;
-				max-width: 90%;
-				padding: 10px 0;
-				}
+			margin: 0 auto;
+			max-width: 82%;
+			padding: 10px 0;
+		}
 
 		form div + div {
-				margin-top: 1em;
-				}
+			margin-top: 1em;
+		}
 		label {
-            	color: gray;
-            	font-weight: normal;
-				display: block;
-				width: 90px;
-            	margin-bottom: 5px;
-				}	
+      color: gray;
+      font-weight: normal;
+		  display: block;
+	    width: 90px;
+      margin: 15px 0;
+		}	
 		input, textarea {  
-				width: 100%;
-				border-radius: 5px;
-            	border: 2px solid lightgray;
-            	padding: 5px;
-				}
+			width: 100%;
+			border-radius: 5px;
+      border: 2px solid lightgray;
+      padding: 5px;
+		}
 		input:focus, textarea:focus {
-				border-color: black;
-				}
+			border-color: black;
+		}
 		textarea {
-				vertical-align: top;
-				height: 5em;
-				resize: vertical;
-            	margin-bottom: 25px;
-				}
-        button {
-            color: white;
-            background-color: #135991;
-            padding: 5px 10px;
-            border-radius: 5px;
-            border: 1px solid #135991;
-        }
+			vertical-align: top;
+			height: 5em;
+			resize: vertical;
+      margin-bottom: 25px;
+		}
+    button { 
+      color: white;
+      background-color: #135991;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid #135991;
+      margin-right: 15px;
+    }
 	</style>
 </head>
 <body>
 	<h1 class="title">Contact Us</h1>
 	<form action="contact form" method="post">
-		<div>
-			<label for="name">Name:</label>
-			<input type="text" id="name" />
-			<label for="mail">E-mail:</label>
-			<input type="email" id="mail"/>
-			<label for="subject">Subject:</label>
-			<input type="text" id="subject"/>
-			<label for="message">Message:</label>
-			<textarea id="message"></textarea>
-			<button type="submit" onclick="sendMail(); return false">Send your message</button>
-			<button type="reset">Reset</button>
-		</div>
+		<label for="name">Name</label>
+		<input type="text" id="name" />
+		<label for="mail">E-mail</label>
+		<input type="email" id="mail"/>
+		<label for="subject">Subject</label>
+		<input type="text" id="subject"/>
+		<label for="message">Message</label>
+		<textarea id="message"></textarea>
+		<button type="submit" onclick="sendMail(); return false">Send your message</button>
+		<button type="reset">Reset</button>
 	</form>
 	<script type="text/javascript">
 			function sendMail() {
